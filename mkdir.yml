@@ -13,5 +13,5 @@
             state: directory
   - name: install httpd
     package:
-            name: httpd
+            name: git
             sate: present
