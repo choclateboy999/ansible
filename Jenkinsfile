@@ -8,7 +8,7 @@ pipeline{
         }
         stage("ansible"){
             steps{
-                   ansiblePlaybook credentialsId: 'tomcat', disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'mkdir.yml'
+                  ansiblePlaybook credentialsId: 'tomcat', disableHostKeyChecking: true, installation: 'ansible', inventory: 'prod', playbook: 'mkdir.yml'
             }
         }
     }
