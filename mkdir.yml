@@ -12,6 +12,4 @@
             path: /home/ec2-user/new
             state: directory
   - name: install httpd
-    package:
-            name: git
-            sate: present
+    package: name=git state=present
