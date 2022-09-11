@@ -11,3 +11,7 @@
     file:
             path: /home/ec2-user/new
             state: directory
+  - name: install httpd
+    package:
+            name: httpd
+            sate: present
