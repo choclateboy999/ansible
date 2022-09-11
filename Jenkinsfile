@@ -8,7 +8,7 @@ pipeline{
         }
         stage(slack){
             steps{
-            ansiblePlaybook credentialsId: 'a001f682-ecbd-45e2-8b3e-287f9f1f2431', disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'mkdir.yml'
+                sh 'ansible-playbook mkdir.yml -i hosts'
             }
         }
     }
