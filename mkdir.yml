@@ -1,0 +1,13 @@
+---
+- hosts: tomcat
+  user: root
+  tasks:
+  - name: remove
+    file:
+             path: /home/ec2-user/new
+             state: absent
+
+  - name: create new folders
+    file:
+            path: /home/ec2-user/new
+            state: directory
