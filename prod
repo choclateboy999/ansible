@@ -1,2 +1,2 @@
 [tomcat]
-3.110.183.19
+3.110.183.19 ansible_user=ec2-user
