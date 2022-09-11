@@ -8,7 +8,7 @@ pipeline{
         }
         stage("ansible"){
             steps{
-                sh 'ansible-playbook mkdir.yml -i hosts'
+                   ansiblePlaybook credentialsId: 'tomcat', disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'mkdir.yml'
             }
         }
     }
